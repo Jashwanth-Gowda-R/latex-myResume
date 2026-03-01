@@ -1,61 +1,16 @@
-% \documentclass[11pt,a4paper,sans]{moderncv}
-% \moderncvstyle{banking}
-% \moderncvcolor{blue}
-
-% \usepackage[utf8]{inputenc}
-% \usepackage[scale=0.75]{geometry}
-% \usepackage{hyperref}
-% \usepackage{fontawesome5}
-
-% % ===================== SPACING TUNING =====================
-% \setlength{\hintscolumnwidth}{2.8cm}
-% \AtBeginDocument{\recomputelengths}
-
-% % ===================== PERSONAL INFO (ATS / METADATA) =====================
-% \name{Jashwanth}{Gowda R}
-% \email{webdevjash6@gmail.com}
-% \homepage{jashwanthgowda.netlify.app}
-% \phone[mobile]{+91-9986621042}
-% \social[linkedin]{jashwanthgowda-6666}
-% \social[github]{Jashwanth-Gowda-R}
-
-% % ===================== FIXED 70 / 30 HEADER =====================
-% \renewcommand*{\makecvtitle}{%
-% \noindent
-% \begin{tabular}{@{}p{0.70\textwidth} p{0.30\textwidth}@{}}
-
-% % -------- LEFT --------
-% {\LARGE\bfseries Jashwanth Gowda R\\[-2pt]
-%  \normalsize Flutter Developer}
-
-% &
-
-% % -------- RIGHT --------
-% {\raggedleft\small
-% \faEnvelope\ \href{mailto:webdevjash6@gmail.com}{webdevjash6@gmail.com}\\
-% \faMobile\ +91-9986621042\\
-% \faGlobe\ \href{https://jashwanthgowda.netlify.app}{jashwanthgowda.netlify.app}\\
-% \faLinkedin\ \href{https://www.linkedin.com/in/jashwanthgowda-6666}{jashwanthgowda-6666}\\
-% \faGithub\ \href{https://github.com/Jashwanth-Gowda-R}{Jashwanth-Gowda-R}
-% }
-
-% \end{tabular}
-% \vspace{0.5em}
-% \hrule
-% \vspace{1em}
-% }
-
-% \begin{document}
-
-% \makecvtitle
-
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 \usepackage[utf8]{inputenc}                    
 \usepackage[scale=0.75]{geometry}
-\usepackage{import}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
 
+% ===================== SPACING TUNING =====================
+\setlength{\hintscolumnwidth}{2.8cm}
+\AtBeginDocument{\recomputelengths}
+
+% ===================== PERSONAL INFO =====================
 \name{Jashwanth}{Gowda R}
 \email{webdevjash6@gmail.com}
 \homepage{jashwanthgowda.netlify.app}
@@ -71,74 +26,85 @@
 
 % ===================== SUMMARY =====================
 \section{Summary}
-Senior-level Flutter Developer with 4+ years of professional experience delivering production-grade mobile and web applications across multiple domains. Specialized in building scalable cross-platform applications using Flutter (Android, iOS) with strong foundations in Clean Architecture (MVVM), state management (Riverpod, Stacked), and performance optimization. Experienced in integrating Firebase and RESTful APIs, setting up CI/CD pipelines, and managing end-to-end app releases on the Play Store and App Store. Proven ability to collaborate with cross-functional teams in Agile environments and deliver reliable, user-focused solutions. Currently contributing to the global rollout of a mobile platform at ProWork.ie.
-
-% ===================== EDUCATION =====================
-\section{Education}
-\cventry{2015 -- 2019}{\textbf{Bachelor of Telecommunication Engineering}}{Don Bosco Institute of Technology, VTU}{Bengaluru, India}{}{}
+Flutter Developer with 4+ years of experience building cross-platform mobile applications for diverse domains. Skilled in Clean Architecture, state management (Riverpod), and performance optimization. Experienced in integrating Firebase services, RESTful APIs, and managing app releases on Play Store and App Store. Passionate about writing clean, maintainable code and collaborating with cross-functional teams. Currently contributing to ProWork's mobile platform for European markets.
 
 % ===================== EXPERIENCE =====================
 \section{Experience}
 
-\cventry{Dec. 2023 -- Present}{\textbf{Flutter Developer}}{\href{https://www.prowork.ie/}{ProWork}}{Bengaluru, India}{}{
+\cventry{Dec. 2023 -- Present}{\textbf{Flutter Developer}}{\href{https://www.prowork.ie/}{ProWork Core India Private Ltd. (Ireland)}}{Bengaluru, India (Remote)}{}{
 \begin{itemize}
-    \item Contributing to the development and global rollout of a cross-platform Flutter application supporting ProWork’s international expansion.
-    \item Designing and implementing scalable mobile features using Flutter and Dart, following Clean Architecture (MVVM) and modular design principles.
-    \item Implementing robust state management using Riverpod to handle complex UI flows and asynchronous data.
-    \item Integrating Firebase services (Authentication, Firestore, Cloud Storage) and RESTful APIs.
+    \item Contributing to the development of a cross-platform Flutter application supporting ProWork's expansion across European markets; 90\%+ of Irish government agencies including Garda department and traffic management authorities utilize the app.
+    \item Working on asset management and inventory management modules for government sector clients.
+    \item Working with Clean Architecture (MVVM) and Riverpod for state management in complex UI flows.
+    \item Integrating Firebase services (Authentication, Realtime Database, Firestore, Cloud Storage, Crashlytics) and RESTful APIs.
+    \item Participating in the complete mobile release lifecycle for Play Store and App Store.
     \item Collaborating with product managers, designers, and QA engineers in Agile sprints.
-    \item Managing the complete mobile release lifecycle for Play Store and App Store.
-    \item Establishing CI/CD pipelines using GitHub Actions.
-    \item Improving application performance through widget optimization and structured code reviews.
+    \item Helping maintain CI/CD pipelines using GitHub Actions.
 \end{itemize}
 }
 
-\cventry{Jul. 2021 -- Nov. 2022}{\textbf{Software Engineer I}}{\href{https://www.digitalgreen.org/}{Digital Green}}{Bengaluru, India}{}{
+\cventry{Jul. 2021 -- Nov. 2022}{\textbf{Software Engineer I}}{\href{https://www.digitalgreen.org/}{Digital Green Trust}}{Bengaluru, India}{}{
 \begin{itemize}
-    \item Developed and maintained a Flutter-based mobile application for agricultural data collection.
-    \item Enabled Farmer Producer Organizations (FPOs) with analytics for sales planning.
-    \item Co-built a ReactJS-based \href{https://farmstack.co/}{data-sharing platform}.
-    \item Developed PowerBI dashboards for large-scale data visualization.
+    \item Developed and maintained Flutter-based mobile application for agricultural data collection used by 10,000+ farmers across 4 states in India.
+    \item Application was expanded to Ethiopia and Kenya, working with their governments as a data collection tool for farmer information.
+    \item Implemented offline-first architecture with local database synchronization for areas with limited connectivity.
+    \item Integrated Firebase services (Authentication, Realtime Database, Firestore, Crashlytics) for real-time data sync and analytics.
+    \item Assisted in building analytics dashboards using PowerBI for agricultural data visualization.
+    \item Contributed to ReactJS-based \href{https://farmstack.co/}{FarmStack} data-sharing platform.
 \end{itemize}
 }
 
-\cventry{Oct. 2019 -- Apr. 2021}{\textbf{Software Engineer}}{\href{https://vrook.co/}{Vrook}}{Bengaluru, India}{}{
+\cventry{Oct. 2019 -- Apr. 2021}{\textbf{Software Engineer}}{\href{https://vrook.co/}{VROOK (Booksbeka Online Solutions Pvt Ltd)}}{Bengaluru, India}{}{
 \begin{itemize}
-    \item Developed mobile-responsive OpenEdX LMS themes.
-    \item Implemented OpenCart-based e-commerce features.
+    \item Developed responsive OpenEdX LMS themes used by 2 autonomous colleges for their e-learning platforms.
+    \item Implemented e-commerce features using OpenCart for the website booksbeka.in, a online book selling platform.
+\end{itemize}
+}
+
+% ===================== OPEN SOURCE =====================
+\section{Open Source}
+
+\cventry{2026 -- Present}{\textbf{Package Creator}}{\href{https://pub.dev/packages/dynamic_ui_renderer}{dynamic\_ui\_renderer (Flutter)}}{Pub.dev}{}{
+\begin{itemize}
+    \item Created and published a Flutter package for server-driven UI that enables dynamic form rendering from JSON.
+    \item Built a forms \& validation system with 10+ field types and 12+ validation rules.
+    \item Achieved 95\%+ test coverage for the package.
+    \item Package helps developers update UI without app store releases — useful for A/B testing and white-label apps.
+    \item \textbf{Package:} \href{https://pub.dev/packages/dynamic_ui_renderer}{pub.dev/packages/dynamic\_ui\_renderer}
 \end{itemize}
 }
 
 % ===================== INTERNSHIP =====================
-\section{Internships}
-\cventry{Feb. 2019 -- Apr. 2019}{\textbf{Bachelor Project}}{\href{https://www.isro.gov.in/}{ISRO}}{Bengaluru, India}{}{
+\section{Internship}
+\cventry{Feb. 2019 -- Apr. 2019}{\textbf{Research Intern}}{\href{https://www.isro.gov.in/}{ISRO}}{Bengaluru, India}{}{
 \begin{itemize}
-    \item Designed a 1KV DC Rectifier Unit for Doppler Weather Radar systems.
-    \item Worked on mission-critical power supply systems.
+    \item Assisted in designing a 1KV DC Rectifier Unit for Doppler Weather Radar systems as part of bachelor project.
 \end{itemize}
 }
 
-% ===================== FREELANCING =====================
-\section{Freelancing}
+% ===================== FREELANCE PROJECTS =====================
+\section{Freelance Projects}
 
 \cventry{Apr. 2023 -- Jul. 2023}{\textbf{Flutter Developer}}{\href{https://imcls.org/}{IMCLS}}{Remote}{}{
 \begin{itemize}
-    \item Built a Flutter-based storybook e-reader application for the Idu Mishmi language.
+    \item Built Flutter-based e-reader application for preserving Idu Mishmi indigenous language.
+    \item Implemented offline audio features for language learning.
 \end{itemize}
 }
 
 \cventry{Sep. 2021 -- Nov. 2021}{\textbf{Data Curator}}{\href{https://xri.institute/}{XRI Institute}}{Remote}{}{
 \begin{itemize}
-    \item Curated and annotated datasets for low-resource language ecosystems.
+    \item Curated datasets for low-resource language research.
 \end{itemize}
 }
 
-% ===================== PROJECTS =====================
+% ===================== PERSONAL PROJECTS =====================
 \section{Personal Projects}
 
-\cventry{}{Flutter Developer}{\href{https://play.google.com/store/apps/details?id=imcls.dictionary.demo_flutter}{Mishmi (Idu) Dictionary}}{}{}{
+\cventry{}{Flutter Developer}{\href{https://play.google.com/store/apps/details?id=imcls.dictionary.demo_flutter}{Mishmi (Idu) Dictionary}}{Play Store}{}{
 \begin{itemize}
-    \item Developed UI components and offline audio features for a Flutter dictionary app.
+    \item Developed Flutter dictionary app with offline audio support for endangered language preservation.
+    \item Available on Google Play Store.
 \end{itemize}
 }
 
@@ -148,23 +114,42 @@ Senior-level Flutter Developer with 4+ years of professional experience deliveri
 \end{itemize}
 }
 
-% ===================== SKILLS =====================
+% ===================== EDUCATION =====================
+\section{Education}
+\cventry{2015 -- 2019}{\textbf{B.E. in Telecommunication Engineering}}{Don Bosco Institute of Technology, VTU}{Bengaluru, India}{}{}
+
+% ===================== TECHNICAL SKILLS =====================
 \section{Skills}
 \begin{itemize}
-    \item \textbf{Mobile Development:} Flutter, Dart, Android, iOS
-    \item \textbf{Architecture \& State Management:} Clean Architecture, MVVM, Riverpod, Stacked
-    \item \textbf{Web Development:} ReactJS, JavaScript, Bootstrap, Jekyll
-    \item \textbf{Backend \& APIs:} Firebase (Auth, Firestore, Storage), Appwrite, REST APIs
-    \item \textbf{Databases:} Firestore, MySQL, SQLite, Drift
-    \item \textbf{DevOps \& Deployment:} CI/CD (GitHub Actions), Docker, AWS, Play Store, App Store
-    \item \textbf{Tools \& Practices:} Git, Jira, Agile/Scrum, Performance Optimization
+    \item \textbf{Mobile:} Flutter, Dart, Android, iOS
+    \item \textbf{Architecture:} Clean Architecture, MVVM, Riverpod, Stacked
+    \item \textbf{Backend \& Cloud:} Firebase (Auth, Realtime DB, Firestore, Storage, Crashlytics), REST APIs
+    \item \textbf{Databases:} SQLite, Drift, Hive, Firestore
+    \item \textbf{Tools \& CI/CD:} Git, GitHub Actions, Jira, Figma, Postman
+    \item \textbf{Testing:} Unit Testing, Widget Testing
+    \item \textbf{Deployment:} Google Play Store, Apple App Store
+    \item \textbf{Methodologies:} Agile/Scrum, Code Reviews
+\end{itemize}
+
+% ===================== LANGUAGES =====================
+\section{Languages}
+\begin{itemize}
+    \item \textbf{English, Hindi:} Professional working proficiency
+    \item \textbf{Kannada:} Native
 \end{itemize}
 
 % ===================== CERTIFICATIONS =====================
 \section{Certifications}
 \begin{itemize}
-    \item Flutter Foundations Course — Andrea Bizzotto (2022)
-    \item Complete Dart Language Guide — Andrea Bizzotto (2022)
+    \item Flutter Foundations — Andrea Bizzotto (2022)
+    \item Dart Complete Guide — Andrea Bizzotto (2022)
+\end{itemize}
+
+% ===================== ADDITIONAL INFORMATION =====================
+\section{Additional Information}
+\begin{itemize}
+    \item \textbf{Open to:} Relocation opportunities in Europe, Australia, and Gulf countries
+    \item \textbf{Notice Period:} 45 days (negotiable)
 \end{itemize}
 
 \end{document}
